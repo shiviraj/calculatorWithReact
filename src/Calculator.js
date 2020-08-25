@@ -33,9 +33,12 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="calculator">
-        <Screen text={this.state.text} result={this.state.result} />
-        <Buttons handleClick={this.buttonClick} />
+      <div>
+        <h1>Calculator</h1>
+        <div className="calculator">
+          <Screen text={this.state.text} result={this.state.result} />
+          <Buttons handleClick={this.buttonClick} />
+        </div>
       </div>
     );
   }
